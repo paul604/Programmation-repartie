@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # serveur en python 3
 
-import socket
+from socket import *
 
 HOST = ''
 PORT = 50007
@@ -11,7 +11,7 @@ s.bind((HOST, PORT))
 s.listen(7)
 
 conn, addr = s.accept()
-print 'connecte par ', addr
+print ('connecte par ', addr)
 while 1:
     data = conn.recv(1024)
     if not data:
