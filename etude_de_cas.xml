@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<labels x="29" y="588" width="100" height="15" border="true">
+<text>Ctrl 1</text>
+</labels>
+<labels x="837" y="595" width="100" height="15" border="true">
+<text>Ctrl 2</text>
+</labels>
+<labels x="114" y="1113" width="100" height="15" border="true">
+<text>GestOrdre1</text>
+</labels>
+<labels x="742" y="1114" width="100" height="15" border="true">
+<text>GestOrdre2</text>
+</labels>
+<labels x="220" y="66" width="101" height="16" border="true">
+<text>Prlv1</text>
+</labels>
+<labels x="751" y="66" width="101" height="16" border="true">
+<text>Prlv2</text>
+</labels>
+<place id="créer ordre">
+<graphics>
+<position x="270.0" y="810.0"/>
+</graphics>
+<name>
+<value>créer ordre</value>
+<graphics>
+<offset x="91.6071428571429" y="0.17857142857142838"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="créer ordre C2">
+<graphics>
+<position x="600.0" y="795.0"/>
+</graphics>
+<name>
+<value>créer ordre C2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="exclusion mutuelle">
+<graphics>
+<position x="439.16666666666663" y="787.5"/>
+</graphics>
+<name>
+<value>exclusion mutuelle</value>
+<graphics>
+<offset x="61.428571428571445" y="-9.999999999999998"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="fille">
+<graphics>
+<position x="482.91666666666663" y="992.9166666666666"/>
+</graphics>
+<name>
+<value>fille</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="info C1">
+<graphics>
+<position x="285.0" y="656.25"/>
+</graphics>
+<name>
+<value>info C1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="info C2">
+<graphics>
+<position x="585.0" y="645.0"/>
+</graphics>
+<name>
+<value>info C2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="lecture P2">
+<graphics>
+<position x="690.0" y="420.0"/>
+</graphics>
+<name>
+<value>lecture P2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="lectutre P1">
+<graphics>
+<position x="221.25" y="420.0"/>
+</graphics>
+<name>
+<value>lectutre P1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="len">
+<graphics>
+<position x="390.8333333333333" y="992.0833333333335"/>
+</graphics>
+<name>
+<value>len</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,10</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="out">
+<graphics>
+<position x="426.24999999999994" y="1238.0952380952383"/>
+</graphics>
+<name>
+<value>out</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="registre">
+<graphics>
+<position x="450.0" y="330.0"/>
+</graphics>
+<name>
+<value>registre</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="registre libre">
+<graphics>
+<position x="450.0" y="120.0"/>
+</graphics>
+<name>
+<value>registre libre</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="registre valeur">
+<graphics>
+<position x="450.0" y="525.0"/>
+</graphics>
+<name>
+<value>registre valeur</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repo Ctrl">
+<graphics>
+<position x="127.5" y="597.9166666666666"/>
+</graphics>
+<name>
+<value>repo Ctrl</value>
+<graphics>
+<offset x="55.0" y="-3.75"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repo gestOrdre1">
+<graphics>
+<position x="365.0" y="1165.4166666666667"/>
+</graphics>
+<name>
+<value>repo gestOrdre1</value>
+<graphics>
+<offset x="5.7142857142857135" y="4.285714285714285"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repo gestOrdre2">
+<graphics>
+<position x="480.0" y="1170.0"/>
+</graphics>
+<name>
+<value>repo gestOrdre2</value>
+<graphics>
+<offset x="112.85714285714293" y="5.714285714285715"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repoP1">
+<graphics>
+<position x="225.0" y="90.0"/>
+</graphics>
+<name>
+<value>repoP1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repoP2">
+<graphics>
+<position x="690.0" y="100.0"/>
+</graphics>
+<name>
+<value>repoP2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="repot Ctrol2">
+<graphics>
+<position x="791.6666666666666" y="600.0"/>
+</graphics>
+<name>
+<value>repot Ctrol2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="traiter ordre G1">
+<graphics>
+<position x="225.83333333333337" y="1171.845238095238"/>
+</graphics>
+<name>
+<value>traiter ordre G1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="traiter ordre G2">
+<graphics>
+<position x="645.0" y="1170.0"/>
+</graphics>
+<name>
+<value>traiter ordre G2</value>
+<graphics>
+<offset x="117.14285714285714" y="21.428571428571423"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="verif1 P1">
+<graphics>
+<position x="225.0" y="240.0"/>
+</graphics>
+<name>
+<value>verif1 P1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="verif P2">
+<graphics>
+<position x="690.0" y="240.0"/>
+</graphics>
+<name>
+<value>verif P2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="depot ordre">
+<graphics>
+<position x="271.6666666666667" y="913.75"/>
+</graphics>
+<name>
+<value>depot ordre</value>
+<graphics>
+<offset x="-8.035714285714276" y="24.464285714285708"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="depot P1">
+<graphics>
+<position x="225.0" y="525.0"/>
+</graphics>
+<name>
+<value>depot P1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="depot P2">
+<graphics>
+<position x="690.0" y="525.0"/>
+</graphics>
+<name>
+<value>depot P2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="dept ordre C2">
+<graphics>
+<position x="613.3333333333334" y="898.3333333333333"/>
+</graphics>
+<name>
+<value>dept ordre C2</value>
+<graphics>
+<offset x="115.00000000000001" y="17.857142857142858"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get info">
+<graphics>
+<position x="285.0" y="588.75"/>
+</graphics>
+<name>
+<value>get info</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get info ctrl2">
+<graphics>
+<position x="570.0" y="583.3333333333334"/>
+</graphics>
+<name>
+<value>get info ctrl2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get registre libre">
+<graphics>
+<position x="225.0" y="165.0"/>
+</graphics>
+<name>
+<value>get registre libre</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get registre libre P2">
+<graphics>
+<position x="690.0" y="150.0"/>
+</graphics>
+<name>
+<value>get registre libre P2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get registre P1">
+<graphics>
+<position x="225.0" y="330.0"/>
+</graphics>
+<name>
+<value>get registre P1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get registre p2">
+<graphics>
+<position x="690.0" y="330.0"/>
+</graphics>
+<name>
+<value>get registre p2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Liste libre C1">
+<graphics>
+<position x="285.0" y="731.25"/>
+</graphics>
+<name>
+<value>Liste libre C1</value>
+<graphics>
+<offset x="5.0" y="7.857142857142861"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Liste libre C2">
+<graphics>
+<position x="585.0" y="720.0"/>
+</graphics>
+<name>
+<value>Liste libre C2</value>
+<graphics>
+<offset x="2.1428571428571423" y="13.571428571428577"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="out Ordre G1">
+<graphics>
+<position x="280.4166666666667" y="1256.6666666666667"/>
+</graphics>
+<name>
+<value>out Ordre G1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="out Ordre G2">
+<graphics>
+<position x="570.0" y="1260.0"/>
+</graphics>
+<name>
+<value>out Ordre G2</value>
+<graphics>
+<offset x="126.4285714285714" y="30.71428571428571"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T15">
+<graphics>
+<position x="528.75" y="1083.75"/>
+</graphics>
+<name>
+<value>T15</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T9">
+<graphics>
+<position x="362.5" y="1085.8333333333333"/>
+</graphics>
+<name>
+<value>T9</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="créer ordre C2 to dept ordre C2" source="créer ordre C2" target="dept ordre C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="611" y="818" curvePoint="false"/>
+<arcpath id="001" x="620" y="901" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="depot ordre to repo Ctrl" source="depot ordre" target="repo Ctrl">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="271" y="916" curvePoint="false"/>
+<arcpath id="001" x="143" y="620" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="dept ordre C2 to exclusion mutuelle" source="dept ordre C2" target="exclusion mutuelle">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="613" y="901" curvePoint="false"/>
+<arcpath id="001" x="461" y="805" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="dept ordre C2 to fille" source="dept ordre C2" target="fille">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="621" y="911" curvePoint="false"/>
+<arcpath id="001" x="505" y="993" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="dept ordre C2 to repot Ctrol2" source="dept ordre C2" target="repot Ctrol2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="628" y="903" curvePoint="false"/>
+<arcpath id="001" x="793" y="621" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="exclusion mutuelle to Liste libre C2" source="exclusion mutuelle" target="Liste libre C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="461" y="790" curvePoint="false"/>
+<arcpath id="001" x="578" y="730" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="fille to T15" source="fille" target="T15">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="500" y="1015" curvePoint="false"/>
+<arcpath id="001" x="541" y="1088" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get info ctrl2 to info C2" source="get info ctrl2" target="info C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="578" y="596" curvePoint="false"/>
+<arcpath id="001" x="590" y="640" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get registre libre P2 to P7" source="get registre libre P2" target="verif P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="698" y="163" curvePoint="false"/>
+<arcpath id="001" x="698" y="235" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get registre libre to P1" source="get registre libre" target="verif1 P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="233" y="178" curvePoint="false"/>
+<arcpath id="001" x="233" y="235" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get registre P1 to P2" source="get registre P1" target="lectutre P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="233" y="343" curvePoint="false"/>
+<arcpath id="001" x="231" y="415" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get registre p2 to P8" source="get registre p2" target="lecture P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="698" y="343" curvePoint="false"/>
+<arcpath id="001" x="698" y="415" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="info C2 to Liste libre C2" source="info C2" target="Liste libre C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="593" y="668" curvePoint="false"/>
+<arcpath id="001" x="593" y="723" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="len to dept ordre C2" source="len" target="dept ordre C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="413" y="995" curvePoint="false"/>
+<arcpath id="001" x="606" y="908" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Liste libre C2 to créer ordre C2" source="Liste libre C2" target="créer ordre C2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="593" y="733" curvePoint="false"/>
+<arcpath id="001" x="606" y="790" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="nb Prod to T6" source="registre valeur" target="get info">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="445" y="540" curvePoint="false"/>
+<arcpath id="001" x="308" y="598" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="out Ordre G2 to out" source="out Ordre G2" target="out">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="563" y="1270" curvePoint="false"/>
+<arcpath id="001" x="450" y="1250" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="out Ordre G2 to repo gestOrdre2" source="out Ordre G2" target="repo gestOrdre2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="573" y="1263" curvePoint="false"/>
+<arcpath id="001" x="500" y="1190" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P10 to T7" source="info C1" target="Liste libre C1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="293" y="680" curvePoint="false"/>
+<arcpath id="001" x="293" y="735" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P11 to T8" source="créer ordre" target="depot ordre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="278" y="835" curvePoint="false"/>
+<arcpath id="001" x="278" y="918" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P12 to T7" source="exclusion mutuelle" target="Liste libre C1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="435" y="791" curvePoint="false"/>
+<arcpath id="001" x="308" y="741" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P13 to T9" source="fille" target="T9">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="480" y="1011" curvePoint="false"/>
+<arcpath id="001" x="376" y="1090" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P14 to T8" source="len" target="depot ordre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="386" y="993" curvePoint="false"/>
+<arcpath id="001" x="280" y="928" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P15 to T9" source="repo gestOrdre1" target="T9">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="373" y="1160" curvePoint="false"/>
+<arcpath id="001" x="376" y="1100" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P16 to T10" source="traiter ordre G1" target="out Ordre G1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="243" y="1193" curvePoint="false"/>
+<arcpath id="001" x="283" y="1260" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P1 to get registre P1" source="verif1 P1" target="get registre P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="233" y="263" curvePoint="false"/>
+<arcpath id="001" x="233" y="333" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P2 to T2" source="lectutre P1" target="depot P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="230" y="443" curvePoint="false"/>
+<arcpath id="001" x="225" y="528" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P7 to get registre p2" source="verif P2" target="get registre p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="698" y="263" curvePoint="false"/>
+<arcpath id="001" x="698" y="333" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P8 to T5" source="lecture P2" target="depot P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="700" y="443" curvePoint="false"/>
+<arcpath id="001" x="705" y="530" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P9 to T6" source="repo Ctrl" target="get info">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="151" y="606" curvePoint="false"/>
+<arcpath id="001" x="278" y="598" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="registre libre to get registre libre" source="registre libre" target="get registre libre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="445" y="131" curvePoint="false"/>
+<arcpath id="001" x="248" y="175" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="registre libre to get registre libre P2" source="registre libre" target="get registre libre P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="473" y="131" curvePoint="false"/>
+<arcpath id="001" x="683" y="160" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="registre to get registre P1" source="registre" target="get registre P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="445" y="340" curvePoint="false"/>
+<arcpath id="001" x="248" y="340" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="registre to get registre p2" source="registre" target="get registre p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="475" y="340" curvePoint="false"/>
+<arcpath id="001" x="683" y="340" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="registre valeur to get info ctrl2" source="registre valeur" target="get info ctrl2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="471" y="541" curvePoint="false"/>
+<arcpath id="001" x="563" y="593" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="repo gestOrdre2 to T15" source="repo gestOrdre2" target="T15">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="496" y="1166" curvePoint="false"/>
+<arcpath id="001" x="533" y="1098" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="repoP1 to get registre libre" source="repoP1" target="get registre libre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="233" y="113" curvePoint="false"/>
+<arcpath id="001" x="233" y="168" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="repoP2 to get registre libre P2" source="repoP2" target="get registre libre P2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="698" y="123" curvePoint="false"/>
+<arcpath id="001" x="698" y="153" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="repot Ctrol2 to get info ctrl2" source="repot Ctrol2" target="get info ctrl2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="786" y="608" curvePoint="false"/>
+<arcpath id="001" x="593" y="593" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T10 to P15" source="out Ordre G1" target="repo gestOrdre1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="293" y="1261" curvePoint="false"/>
+<arcpath id="001" x="363" y="1185" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T10 to P17" source="out Ordre G1" target="out">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="305" y="1266" curvePoint="false"/>
+<arcpath id="001" x="420" y="1250" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T15 to len" source="T15" target="len">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="531" y="1088" curvePoint="false"/>
+<arcpath id="001" x="413" y="1010" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T15 to traiter ordre G2" source="T15" target="traiter ordre G2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="543" y="1098" curvePoint="false"/>
+<arcpath id="001" x="641" y="1170" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to nb Prod" source="depot P1" target="registre valeur">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="248" y="535" curvePoint="false"/>
+<arcpath id="001" x="445" y="535" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to registre" source="depot P1" target="registre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="240" y="530" curvePoint="false"/>
+<arcpath id="001" x="448" y="348" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to registre libre" source="depot P1" target="registre libre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="231" y="528" curvePoint="false"/>
+<arcpath id="001" x="451" y="141" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to repoP1" source="depot P1" target="repoP1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="218" y="535" curvePoint="false"/>
+<arcpath id="001" x="81" y="535" curvePoint="false"/>
+<arcpath id="002" x="103" y="86" curvePoint="false"/>
+<arcpath id="003" x="220" y="98" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to nb Prod" source="depot P2" target="registre valeur">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="683" y="535" curvePoint="false"/>
+<arcpath id="001" x="475" y="535" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to registre" source="depot P2" target="registre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="690" y="528" curvePoint="false"/>
+<arcpath id="001" x="470" y="348" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to registre libre" source="depot P2" target="registre libre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="696" y="528" curvePoint="false"/>
+<arcpath id="001" x="466" y="141" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to repoP2" source="depot P2" target="repoP2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="713" y="535" curvePoint="false"/>
+<arcpath id="001" x="816" y="535" curvePoint="false"/>
+<arcpath id="002" x="801" y="105" curvePoint="false"/>
+<arcpath id="003" x="713" y="108" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T6 to P10" source="get info" target="info C1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="293" y="603" curvePoint="false"/>
+<arcpath id="001" x="293" y="650" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to P11" source="Liste libre C1" target="créer ordre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="293" y="745" curvePoint="false"/>
+<arcpath id="001" x="281" y="805" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T8 to P12" source="depot ordre" target="exclusion mutuelle">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="286" y="918" curvePoint="false"/>
+<arcpath id="001" x="436" y="805" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T8 to P13" source="depot ordre" target="fille">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="295" y="923" curvePoint="false"/>
+<arcpath id="001" x="478" y="996" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T9 to P14" source="T9" target="len">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="366" y="1090" curvePoint="false"/>
+<arcpath id="001" x="395" y="1015" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T9 to P16" source="T9" target="traiter ordre G1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="366" y="1100" curvePoint="false"/>
+<arcpath id="001" x="248" y="1173" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="traiter ordre G2 to out Ordre G2" source="traiter ordre G2" target="out Ordre G2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="645" y="1190" curvePoint="false"/>
+<arcpath id="001" x="583" y="1265" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
