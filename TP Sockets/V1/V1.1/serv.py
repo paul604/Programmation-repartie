@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-# serveur en python 3
+#!/usr/bin/python
+# serveur en python
 
 from socket import *
 

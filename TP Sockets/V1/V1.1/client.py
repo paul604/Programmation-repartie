@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 from socket import *
 
@@ -13,8 +13,8 @@ while i <= 20:
     s.send(b'Bonjour Vieux Serveur')
     i = i + 1
     data = s.recv(1024)
-    print ('ok :', data)
+    print 'ok :', data
 
 s.close()
 
-print ('Client> j ai recu ', data)
+print 'Client> j ai recu ', data
