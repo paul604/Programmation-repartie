@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="monInterfaceDistant">
+    <output-path>$PROJECT_DIR$/out/artifacts/monInterfaceDistant</output-path>
+    <root id="archive" name="monInterfaceDistant.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/TD RMI/serveur/IMonInterfaceDistant.class" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<labels x="86" y="20" width="100" height="15" border="true">
+<text>client 1</text>
+</labels>
+<labels x="476" y="20" width="100" height="15" border="true">
+<text>client 2</text>
+</labels>
+<labels x="305" y="20" width="100" height="15" border="true">
+<text>serveur</text>
+</labels>
+<place id="analyse 1">
+<graphics>
+<position x="120.0" y="375.0"/>
+</graphics>
+<name>
+<value>analyse 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="analyse 2">
+<graphics>
+<position x="510.0" y="375.0"/>
+</graphics>
+<name>
+<value>analyse 2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="client repot 1">
+<graphics>
+<position x="120.0" y="75.0"/>
+</graphics>
+<name>
+<value>client repot 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="client repot 2">
+<graphics>
+<position x="510.0" y="75.0"/>
+</graphics>
+<name>
+<value>client repot 2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="connection ok 1">
+<graphics>
+<position x="120.0" y="225.0"/>
+</graphics>
+<name>
+<value>connection ok 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="connection ok 2">
+<graphics>
+<position x="510.0" y="225.0"/>
+</graphics>
+<name>
+<value>connection ok 2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="ressource">
+<graphics>
+<position x="330.0" y="165.0"/>
+</graphics>
+<name>
+<value>ressource</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="ressource dispo">
+<graphics>
+<position x="330.0" y="90.0"/>
+</graphics>
+<name>
+<value>ressource dispo</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="connection 1">
+<graphics>
+<position x="120.0" y="150.0"/>
+</graphics>
+<name>
+<value>connection 1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="connection 2">
+<graphics>
+<position x="510.0" y="150.0"/>
+</graphics>
+<name>
+<value>connection 2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get ressource 1">
+<graphics>
+<position x="120.0" y="300.0"/>
+</graphics>
+<name>
+<value>get ressource 1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="get ressource 2">
+<graphics>
+<position x="510.0" y="300.0"/>
+</graphics>
+<name>
+<value>get ressource 2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="return ressource 1">
+<graphics>
+<position x="120.0" y="435.0"/>
+</graphics>
+<name>
+<value>return ressource 1</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="return ressource 2">
+<graphics>
+<position x="510.0" y="435.0"/>
+</graphics>
+<name>
+<value>return ressource 2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>90</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="analyse 1 to return ressource 1" source="analyse 1" target="return ressource 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="130" y="401" curvePoint="false"/>
+<arcpath id="001" x="126" y="441" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="client repot 1 to connection 1" source="client repot 1" target="connection 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="131" y="101" curvePoint="false"/>
+<arcpath id="001" x="131" y="156" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="connection 1 to connection ok 1" source="connection 1" target="connection ok 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="131" y="166" curvePoint="false"/>
+<arcpath id="001" x="131" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="connection ok 1 to get ressource 1" source="connection ok 1" target="get ressource 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="130" y="251" curvePoint="false"/>
+<arcpath id="001" x="126" y="306" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="get ressource 1 to analyse 1" source="get ressource 1" target="analyse 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="131" y="316" curvePoint="false"/>
+<arcpath id="001" x="131" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P5 to T3" source="client repot 2" target="connection 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="521" y="101" curvePoint="false"/>
+<arcpath id="001" x="521" y="156" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P6 to T4" source="connection ok 2" target="get ressource 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="251" curvePoint="false"/>
+<arcpath id="001" x="526" y="307" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P7 to T5" source="analyse 2" target="return ressource 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="523" y="401" curvePoint="false"/>
+<arcpath id="001" x="526" y="442" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ressource dispo to connection 1" source="ressource dispo" target="connection 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="327" y="106" curvePoint="false"/>
+<arcpath id="001" x="146" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ressource dispo to T3" source="ressource dispo" target="connection 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="356" y="107" curvePoint="false"/>
+<arcpath id="001" x="506" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ressource to get ressource 1" source="ressource" target="get ressource 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="329" y="185" curvePoint="false"/>
+<arcpath id="001" x="136" y="307" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ressource to T4" source="ressource" target="get ressource 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="354" y="185" curvePoint="false"/>
+<arcpath id="001" x="516" y="306" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="return ressource 1 to client repot 1" source="return ressource 1" target="client repot 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="116" y="447" curvePoint="false"/>
+<arcpath id="001" x="42" y="447" curvePoint="false"/>
+<arcpath id="002" x="42" y="87" curvePoint="false"/>
+<arcpath id="003" x="117" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="return ressource 1 to ressource" source="return ressource 1" target="ressource">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="136" y="442" curvePoint="false"/>
+<arcpath id="001" x="332" y="188" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="return ressource 1 to ressource dispo" source="return ressource 1" target="ressource dispo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="116" y="447" curvePoint="false"/>
+<arcpath id="001" x="12" y="447" curvePoint="false"/>
+<arcpath id="002" x="12" y="42" curvePoint="false"/>
+<arcpath id="003" x="342" y="42" curvePoint="false"/>
+<arcpath id="004" x="342" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T3 to P6" source="connection 2" target="connection ok 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="521" y="166" curvePoint="false"/>
+<arcpath id="001" x="521" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T4 to P7" source="get ressource 2" target="analyse 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="521" y="316" curvePoint="false"/>
+<arcpath id="001" x="521" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to P5" source="return ressource 2" target="client repot 2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="536" y="447" curvePoint="false"/>
+<arcpath id="001" x="582" y="447" curvePoint="false"/>
+<arcpath id="002" x="582" y="87" curvePoint="false"/>
+<arcpath id="003" x="537" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to ressource" source="return ressource 2" target="ressource">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="441" curvePoint="false"/>
+<arcpath id="001" x="350" y="189" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to ressource dispo" source="return ressource 2" target="ressource dispo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="536" y="447" curvePoint="false"/>
+<arcpath id="001" x="657" y="447" curvePoint="false"/>
+<arcpath id="002" x="657" y="42" curvePoint="false"/>
+<arcpath id="003" x="342" y="42" curvePoint="false"/>
+<arcpath id="004" x="342" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="monObjetAccessibleDistance">
+    <output-path>$PROJECT_DIR$/out/artifacts/monObjetAccessibleDistance</output-path>
+    <root id="archive" name="monObjetAccessibleDistance.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/out/production/TD RMI/serveur/MonObjetAccessibleDistance.class" />
+    </root>
+  </artifact>
+</component>
