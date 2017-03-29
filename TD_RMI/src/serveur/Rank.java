@@ -14,6 +14,10 @@ import java.util.stream.Collectors;
 public class Rank extends UnicastRemoteObject implements IRank {
 
     private HashMap<String, Integer> scors=null;
+ 
+    //--------------------------------------------------
+    //|                 constructeur                   |
+    //--------------------------------------------------
 
     public Rank() throws RemoteException {
         super();
@@ -22,6 +26,12 @@ public class Rank extends UnicastRemoteObject implements IRank {
         this.scors.put("E2",10);
         this.scors.put("E3",5);
     }
+
+
+    //--------------------------------------------------
+    //|                  Override                      |
+    //--------------------------------------------------
+
 
     @Override
     public HashMap<String, Integer> getAllScors() {
@@ -35,6 +45,7 @@ public class Rank extends UnicastRemoteObject implements IRank {
 
     @Override
     public List<String> getEquipe(){
-        return this.scors.keySet().stream().collect(Collectors.toList());
+        //on ne retourne pas directement keySet() car elle retourne un objet de type Set. Or Set n'est pas Serializable.
+        return new ArrayList<>(this.scors.keySet());
     }
 }

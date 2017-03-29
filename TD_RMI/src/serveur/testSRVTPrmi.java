@@ -17,10 +17,15 @@ public class testSRVTPrmi {
 
     public static void main(String ... arg)throws RemoteException, MalformedURLException, UnknownHostException {
         try {
+            //lance rmiregisty sur le port 1099
             LocateRegistry.createRegistry(1099);
+
             IRank rank = new Rank(); // creation de l'obj
+
+            //mise a disposition de l'obj
             Naming.rebind("rmi://" + InetAddress.getLocalHost().getHostAddress() + ":1099" + "/rank", rank);
-            System.out.println("obj rank ok");
+            
+	    System.out.println("obj rank ok");//debug
         }catch (MalformedURLException ee){
             throw new MalformedURLException("Pbm de url");
         } catch (RemoteException | UnknownHostException e) {

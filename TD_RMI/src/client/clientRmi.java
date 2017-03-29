@@ -20,21 +20,27 @@ public class clientRmi {
 
     public static void main(String ... arg) throws NotBoundException {
         try {
+	
+	    //conection au serveur et recupération de l'objet
             Remote monStub = Naming.lookup("rmi://" + InetAddress.getLocalHost().getHostAddress() + ":1099" + "/rank");
-            System.out.println("ok");
+            System.out.println("ok");//debug
 
             if (monStub instanceof IRank) {
                 IRank rank = ((IRank) monStub);
+
+                //get de toute les equipe.
                 List<String> equip = rank.getEquipe();
+
                 Scanner sc = new Scanner(System.in);
                 String choix;
 
+		//menu
                 System.out.print("les equipes dispo: ");
                 equip.forEach(e -> System.out.print(e+", "));
                 System.out.println("\ntout les equipes => all");
-                System.out.println("fin => fin");
+                System.out.println("pour fin => fin");
 
-                do {
+                do {//main loop
                     choix = sc.nextLine();
 
                     if(choix.equalsIgnoreCase("all")){
